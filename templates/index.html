@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col">
+                <label for="year-filter">Year</label>
+                <select id="year-filter" class="form-control"></select>
+            </div>
+            <div class="col">
+                <label for="country-filter">Country</label>
+                <select id="country-filter" class="form-control"></select>
+            </div>
+            <div class="col">
+                <label for="topic-filter">Topic</label>
+                <select id="topic-filter" class="form-control"></select>
+            </div>
+            <div class="col">
+                <label for="region-filter">Region</label>
+                <select id="region-filter" class="form-control"></select>
+            </div>
+        </div>
+        <button id="apply-filters" class="btn btn-primary mb-4">Apply Filters</button>
+        <div id="chart"></div>
+    </div>
+    <script src="static/js/main.js"></script>
+</body>
+</html>
